@@ -1,0 +1,141 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "b076b298-65ee-4234-9a72-fb69ad11c905"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "adminlteTemplate": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/adminlte-template",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/sunray/fonts/font-awesome/css/font-awesome.min.css",
+              "src/assets/sunray/css/materialIcon.css",
+              "src/assets/sunray/bootstrap/css/bootstrap.min.css",
+              "src/assets/sunray/material/material.min.css",
+              "src/assets/sunray/css/material_style.css",
+              "src/assets/sunray/css/style.css",
+              "src/assets/sunray/css/plugins.min.css",
+              "src/assets/sunray/css/responsive.css",
+              "src/assets/sunray/css/theme-color.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/quill/dist/quill.core.css", 
+              "node_modules/quill/dist/quill.snow.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/assets/sunray/jquery/jquery.min.js",
+              "src/assets/sunray/popper/popper.min.js",
+              "src/assets/sunray/jquery-blockui/jquery.blockui.min.js",
+              "src/assets/sunray/jquery-slimscroll/jquery.slimscroll.js",
+              "src/assets/sunray/bootstrap/js/bootstrap.min.js",
+              "src/assets/sunray/counterup/jquery.waypoints.min.js",
+              "src/assets/sunray/counterup/jquery.counterup.min.js",
+              "src/assets/sunray/js/app.js",
+              "src/assets/sunray/js/layout.js",
+              "src/assets/sunray/js/theme-color.js",
+              "src/assets/sunray/material/material.min.js",
+              "node_modules/quill/dist/quill.js",
+              "node_modules/chart.js/dist/chart.js",
+              "node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.js"
+              
+
+         
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "4mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kb",
+                  "maximumError": "10kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "adminlteTemplate:build:production"
+            },
+            "development": {
+              "browserTarget": "adminlteTemplate:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "adminlteTemplate:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "adminlteTemplate"
+}

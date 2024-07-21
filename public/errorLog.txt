@@ -1,0 +1,503 @@
+Time: 2024-5-3  13:36:55
+Query: insert into phr_active_sessions (sessionid,patient_id,location,ip,device,hospital_id,branch_id,browser,os,os_version,active) values ( '5fe09004-c478-4897-8cc8-8ea04bbb869a', '50272f94-2e1f-4a71-8eff-2cb6517fc513', 'Hosthiway - Digital Marketing Agency, C-310, Shaheed Hawaldar Padam Singh Dhama Marg, Greater Noida, Ghaziabad District, Uttar Pradesh, 201309, India', '182.77.59.178','Desktop','d09e4ab2-89a9-460e-9b6d-31140d7363ef','26527209-9a3b-4a76-8138-920797b68258','Microsoft Edge','Windows','10','1')
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-5-3  13:36:55
+Query: insert into phr_active_sessions (sessionid,patient_id,location,ip,device,hospital_id,branch_id,browser,os,os_version,active) values ( '5687b32f-bb8e-480c-a223-254e9dc64889', '50272f94-2e1f-4a71-8eff-2cb6517fc513', 'Hosthiway - Digital Marketing Agency, C-310, Shaheed Hawaldar Padam Singh Dhama Marg, Greater Noida, Ghaziabad District, Uttar Pradesh, 201309, India', '182.77.59.178','Desktop','d09e4ab2-89a9-460e-9b6d-31140d7363ef','26527209-9a3b-4a76-8138-920797b68258','Microsoft Edge','Windows','10','1')
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-5-3  13:36:55
+Query: insert into phr_active_sessions (sessionid,patient_id,location,ip,device,hospital_id,branch_id,browser,os,os_version,active) values ( '74764913-59fb-4779-b357-6a73deadf3df', '50272f94-2e1f-4a71-8eff-2cb6517fc513', 'DME Service Road, Indirapuram, Ghaziabad, Ghaziabad District, Uttar Pradesh, 201014, India', '182.77.59.178','Desktop','d09e4ab2-89a9-460e-9b6d-31140d7363ef','26527209-9a3b-4a76-8138-920797b68258','Microsoft Edge','Windows','10','1')
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-5-3  13:36:55
+Query: insert into phr_active_sessions (sessionid,patient_id,location,ip,device,hospital_id,branch_id,browser,os,os_version,active) values ( '5728af32-ba25-4feb-a038-96e1e6f2f975', '50272f94-2e1f-4a71-8eff-2cb6517fc513', 'Hosthiway - Digital Marketing Agency, C-310, Shaheed Hawaldar Padam Singh Dhama Marg, Greater Noida, Ghaziabad District, Uttar Pradesh, 201309, India', '182.77.59.178','Desktop','d09e4ab2-89a9-460e-9b6d-31140d7363ef','26527209-9a3b-4a76-8138-920797b68258','Microsoft Edge','Windows','10','1')
+
+Time: 2024-5-8  11:53:15
+Query: select *,ppi.firstname as FirstName from message_send_recive msr 
+    left join provider_personal_identifiers ppi on ppi.guid=msr.Sender_id
+    left  JOIN transaction_appointment ta ON ta.patient_id = msr.Reciver_id
+    where ( 
+        msr.Reciver_id= '50272f94-2e1f-4a71-8eff-2cb6517fc513') and msr.Trash_by_phr ='0' AND msr.SenderType='ehr'  GROUP BY  ORDER BY msr.id DESC;
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY msr.id DESC' at line 5
+----------------------------------------------------------------------
+Time: 2024-5-8  11:53:15
+Query: select *,ppi.firstname as FirstName from message_send_recive msr 
+    left join provider_personal_identifiers ppi on ppi.guid=msr.Sender_id
+    left  JOIN transaction_appointment ta ON ta.patient_id = msr.Reciver_id
+    where ( 
+        msr.Reciver_id= '50272f94-2e1f-4a71-8eff-2cb6517fc513') and msr.Trash_by_phr ='0' AND msr.SenderType='ehr'  GROUP BY  ORDER BY msr.id DESC;
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY msr.id DESC' at line 5
+----------------------------------------------------------------------
+Time: 2024-5-8  11:53:15
+Query: select *,ppi.firstname as FirstName from message_send_recive msr 
+    left join provider_personal_identifiers ppi on ppi.guid=msr.Sender_id
+    left  JOIN transaction_appointment ta ON ta.patient_id = msr.Reciver_id
+    where ( 
+        msr.Reciver_id= '50272f94-2e1f-4a71-8eff-2cb6517fc513') and msr.Trash_by_phr ='0' AND msr.SenderType='ehr'  GROUP BY  ORDER BY msr.id DESC;
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY msr.id DESC' at line 5
+----------------------------------------------------------------------
+Time: 2024-5-8  11:53:15
+Query: select *,ppi.firstname as FirstName from message_send_recive msr 
+    left join provider_personal_identifiers ppi on ppi.guid=msr.Sender_id
+    left  JOIN transaction_appointment ta ON ta.patient_id = msr.Reciver_id
+    where ( 
+        msr.Reciver_id= '50272f94-2e1f-4a71-8eff-2cb6517fc513') and msr.Trash_by_phr ='0' AND msr.SenderType='ehr'  GROUP BY  ORDER BY msr.id DESC;
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY msr.id DESC' at line 5
+----------------------------------------------------------------------
+Time: 2024-5-8  15:47:16
+Query: select * from 
+
+    phr_login_details 
+ where email_id='rahul@dnavigation.com' and password='Rahul@123'
+TypeError: Cannot read properties of undefined (reading 'guid')
+----------------------------------------------------------------------
+Time: 2024-5-8  16:10:42
+
+Time: 2024-5-22  11:46:55
+Query: login-verify
+TypeError: cosePublicKey.get is not a function
+----------------------------------------------------------------------
+Time: 2024-5-22  12:2:11
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  12:7:45
+Query: login-verify
+TypeError: cosePublicKey.get is not a function
+----------------------------------------------------------------------
+Time: 2024-5-22  12:19:15
+Query: login-verify
+Error: Must declare either "leafCert" or "credentialPublicKey"
+----------------------------------------------------------------------
+Time: 2024-5-22  12:59:50
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:3:4
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:6:26
+Query: INSERT INTO users (patient_id, credentialPublicKey, counter,credentialID) VALUES ('50272f94-2e1f-4a71-8eff-2cb6517fc513', '165,1,2,3,38,32,1,33,88,32,131,202,116,118,52,28,101,178,31,2,110,21,220,197,197,79,4,28,91,90,233,162,224,201,164,181,242,164,148,34,6,10,34,88,32,229,214,55,210,238,11,25,88,116,75,40,90,55,152,68,244,223,126,43,229,225,126,85,236,215,60,86,139,83,73,167,191', 0,'8uwvX_a_WR3UznB1sx9-eg');
+Error: ER_BAD_FIELD_ERROR: Unknown column 'credentialID' in 'field list'
+----------------------------------------------------------------------
+Time: 2024-5-22  13:9:40
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:10:49
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received null
+----------------------------------------------------------------------
+Time: 2024-5-22  13:12:5
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received null
+----------------------------------------------------------------------
+Time: 2024-5-22  13:13:17
+Query: login-verify
+TypeError: Cannot read properties of undefined (reading 'credential_id')
+----------------------------------------------------------------------
+Time: 2024-5-22  13:14:44
+Query: login-verify
+TypeError: cosePublicKey.get is not a function
+----------------------------------------------------------------------
+Time: 2024-5-22  13:17:55
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:19:47
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:21:57
+Query: login-verify
+TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+----------------------------------------------------------------------
+Time: 2024-5-22  13:23:22
+Query: login-verify
+Error: No data
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: select * from master_coutry_postalcode where countrycode = 'IN' group by states_name;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: 
+    SELECT hr.guid as hospitalid,tro.organization_name,hr.*, CONCAT(hr.addressLine1, ' ', hr.district_name, ' ', hr.states_name, ' ',hr.Country) AS address
+    FROM hosptal_registration hr
+    INNER JOIN transaction_organization tro ON hr.organzation_id = tro.guid
+    WHERE hr.organzation_id ='26527209-9a3b-4a76-8138-920797b68258'
+Error: Handshake inactivity timeout
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: select * from transaction_phrsharedata where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513'
+Error: Handshake inactivity timeout
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: 
+    SELECT hr.guid as hospitalid,tro.organization_name,hr.*, CONCAT(hr.addressLine1, ' ', hr.district_name, ' ', hr.states_name, ' ',hr.Country) AS address
+    FROM hosptal_registration hr
+    INNER JOIN transaction_organization tro ON hr.organzation_id = tro.guid
+    WHERE hr.organzation_id ='26527209-9a3b-4a76-8138-920797b68258'
+Error: Handshake inactivity timeout
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: SELECT * FROM master_appointment_type  
+Error: Handshake inactivity timeout
+----------------------------------------------------------------------
+Time: 2024-5-24  11:46:57
+Query: select * from phr_transaction_reason_of_visit  where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' group by chief_complan_name ORDER BY id DESC;
+Error: Handshake inactivity timeout
+----------------------------------------------------------------------
+Time: 2024-5-25  12:31:21
+Query: insert into phr_backup_code (patient_id, code) values ('50272f94-2e1f-4a71-8eff-2cb6517fc513', 'R0Q9CI5D,SSU8G626,NW652BT7,SKA6LTVS,5XMS4OHM,XGUE5XYF,O4M55WJE,QNQQVP0H,8K5JGY6E,44GLXK2D')
+Error: WARN_DATA_TRUNCATED: Data truncated for column 'patient_id' at row 1
+----------------------------------------------------------------------
+Time: 2024-5-28  16:9:53
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:17
+Query: 
+    SELECT 
+      backup_code1, 
+      backup_code2, 
+      backup_code3, 
+      backup_code4, 
+      backup_code5, 
+      backup_code6, 
+      backup_code7, 
+      backup_code8, 
+      backup_code9 
+    FROM 
+    phr_backup_code 
+    WHERE 
+    patient_id = 50272f94-2e1f-4a71-8eff-2cb6517fc513;
+  
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'f-4a71-8eff-2cb6517fc513' at line 14
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: SELECT firstName,imgSrc, middleName, lastName,displayName, dateOfBirth,postalCode,countrycode,pld.last_chnage_password,
+  authenticator,passkey,
+    patientcontact.city ,patientcontact.state,patientcontact.emailId1 ,master_country_code1.Country,patientcontact.mobilePhone
+    FROM master_patient
+    inner join patientcontact on master_patient.guid=patientcontact.patient_id
+    inner join phr_login_details pld on pld.guid=master_patient.guid
+     inner join master_country_code1  ON patientcontact.country = master_country_code1.countrycode
+    WHERE master_patient.guid = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_patient_email where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_login_history where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_active_sessions where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: SELECT firstName,imgSrc, middleName, lastName,displayName, dateOfBirth,postalCode,countrycode,pld.last_chnage_password,
+  authenticator,passkey,
+    patientcontact.city ,patientcontact.state,patientcontact.emailId1 ,master_country_code1.Country,patientcontact.mobilePhone
+    FROM master_patient
+    inner join patientcontact on master_patient.guid=patientcontact.patient_id
+    inner join phr_login_details pld on pld.guid=master_patient.guid
+     inner join master_country_code1  ON patientcontact.country = master_country_code1.countrycode
+    WHERE master_patient.guid = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_login_history where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  13:17:58
+Query: select * from phr_active_sessions where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: SELECT firstName,imgSrc, middleName, lastName,displayName, dateOfBirth,postalCode,countrycode,pld.last_chnage_password,
+  authenticator,passkey,
+    patientcontact.city ,patientcontact.state,patientcontact.emailId1 ,master_country_code1.Country,patientcontact.mobilePhone
+    FROM master_patient
+    inner join patientcontact on master_patient.guid=patientcontact.patient_id
+    inner join phr_login_details pld on pld.guid=master_patient.guid
+     inner join master_country_code1  ON patientcontact.country = master_country_code1.countrycode
+    WHERE master_patient.guid = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_login_history where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_active_sessions where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_email where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_email where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_email where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  17:7:5
+Query: select email_id from phr_login_details where guid='50272f94-2e1f-4a71-8eff-2cb6517fc513'
+Error: ER_CON_COUNT_ERROR: Too many connections
+----------------------------------------------------------------------
+Time: 2024-5-29  19:23:0
+Query: delete from  users_2fa where  patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513'  ;
+  delete from  challenges where  patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  update phr_login_details set  passkey=0 where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  
+Error: ER_BAD_FIELD_ERROR: Unknown column 'patient_id' in 'where clause'
+----------------------------------------------------------------------
+Time: 2024-5-31  13:14:30
+Query: select emailId1 from provider_contact where provider_id='8d37451e-73ce-4fc9-b5da-8c46d8e5e20f'
+               
+                ;
+TypeError: Cannot read properties of undefined (reading 'emailId1')
+----------------------------------------------------------------------
+Time: 2024-5-31  18:46:23
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-31  18:46:23
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-31  18:46:23
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-31  18:59:24
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-31  19:6:53
+Query: select authenticator_key from phr_login_details where guid='undefined'
+TypeError: Cannot read properties of undefined (reading 'authenticator_key')
+----------------------------------------------------------------------
+Time: 2024-5-31  20:4:52
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  11:21:49
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  11:21:49
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  11:21:49
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  11:21:49
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  16:26:14
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  16:26:14
+Query: update  phr_login_details set authenticator='0',passkey='1' where  guid='50272f94-2e1f-4a71-8eff-2cb6517fc513' ;
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+----------------------------------------------------------------------
+Time: 2024-6-3  16:55:20
+Query: 
+          UPDATE phr_backup_code 
+          SET 
+              hospital_id = '26527209-9a3b-4a76-8138-920797b68258', 
+              branch_id = 'd09e4ab2-89a9-460e-9b6d-31140d7363ef', 
+              backup_code1 = '8VGW', 
+              backup_code2 = '35PS', 
+              backup_code3 = 'FEXG', 
+              backup_code4 = '9S4A', 
+              backup_code5 = '9QLD', 
+              backup_code6 = 'UB72',
+              backup_code7 = 'LAGV',
+              backup_code8 = 'II0V',
+              backup_code9 = '451C',
+              transaction_time='now()'
+          WHERE 
+              patient_id = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+        
+Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'now()' for column 'transaction_time' at row 1
+----------------------------------------------------------------------
+Time: 2024-6-3  16:55:20
+Query: 
+          UPDATE phr_backup_code 
+          SET 
+              hospital_id = '26527209-9a3b-4a76-8138-920797b68258', 
+              branch_id = 'd09e4ab2-89a9-460e-9b6d-31140d7363ef', 
+              backup_code1 = 'QCMS', 
+              backup_code2 = 'H62H', 
+              backup_code3 = 'KA1U', 
+              backup_code4 = '6APM', 
+              backup_code5 = 'ZIXV', 
+              backup_code6 = 'CKL1',
+              backup_code7 = '61W8',
+              backup_code8 = 'NYK3',
+              backup_code9 = 'XA28',
+              transaction_time='now()'
+          WHERE 
+              patient_id = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+        
+Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'now()' for column 'transaction_time' at row 1
+----------------------------------------------------------------------
+Time: 2024-6-3  16:55:44
+Query: 
+          UPDATE phr_backup_code 
+          SET 
+              hospital_id = '26527209-9a3b-4a76-8138-920797b68258', 
+              branch_id = 'd09e4ab2-89a9-460e-9b6d-31140d7363ef', 
+              backup_code1 = '9T9X', 
+              backup_code2 = 'WR4Z', 
+              backup_code3 = '4JUS', 
+              backup_code4 = 'UV4P', 
+              backup_code5 = 'BYB7', 
+              backup_code6 = 'SEVM',
+              backup_code7 = 'US8P',
+              backup_code8 = 'O1XE',
+              backup_code9 = 'TY8D',
+              transaction_time='now()'
+          WHERE 
+              patient_id = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+        
+Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'now()' for column 'transaction_time' at row 1
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: select * from phr_patient_mob where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: SELECT firstName,imgSrc, middleName, lastName,displayName, dateOfBirth,postalCode,countrycode,pld.last_chnage_password,
+  authenticator,passkey,
+    patientcontact.city ,patientcontact.state,patientcontact.emailId1 ,master_country_code1.Country,patientcontact.mobilePhone
+    FROM master_patient
+    inner join patientcontact on master_patient.guid=patientcontact.patient_id
+    inner join phr_login_details pld on pld.guid=master_patient.guid
+     inner join master_country_code1  ON patientcontact.country = master_country_code1.countrycode
+    WHERE master_patient.guid = '50272f94-2e1f-4a71-8eff-2cb6517fc513';
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: select * from phr_active_sessions where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: select * from phr_login_history where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' ORDER BY id DESC;
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: select * from phr_patient_email where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+  select * from patientcontact where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513' 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  16:1:11
+Query: select * from phr_allowed_ip where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513';
+ 
+Error: connect ETIMEDOUT
+----------------------------------------------------------------------
+Time: 2024-6-23  21:56:33
+Query: SELECT tpd.id, tpd.phr_folder_id,tpd.upload_by,tpd.doctype_extention, tpd.branch_id, tpd.hospital_id, tpd.documentType, tpd.Date_uplods, tpd.transaction_time, tpd.full_path, tpd.docSize, tpd.fileName, tpd.fileforreview, tpd.patient_id, tpd.phr, tpd.sms, tpd.reviewer,mp.id as patient_id, mp.guid, mp.active, mp.hospitalId, mp.branchId, mp.prefix, mp.firstName, mp.middleName, mp.lastName, mp.suffix, mp.completeName, mp.displayName, mp.nickName, mp.previousName, mp.dateOfBirth, mp.smokingStatus, mp.patientsId, mp.deceasedStatus, mp.deceasedDate, mp.deceasedReason, mp.maritalStatus, mp.familySize, mp.monthlyIncome, mp.preferredLanguage, mp.bloodGroup, mp.tag, mp.sex, mp.sogiDeclaration, mp.sexualOrientation, mp.age, mp.phone_no, mp.imgSrc, mp.mobilecodes,pi.Id, pi.guid, pi.hospital_id, pi.branchId, pi.Provider_picture, pi.providertitle, pi.firstname, pi.middlename, pi.Lastname, pi.bloodgroup, pi.gender, pi.dateOfBirth, pi.age, pi.language, pi.communication, pi.notifications, pi.Phonenumber, pi.Emailid, pi.role, 
+    CONCAT_WS(' ', COALESCE(pi.firstname, ''), COALESCE(pi.lastname, '')) AS providername
+  FROM transaction_my_patient_docs tpd
+  left join master_patient mp on mp.guid = tpd.patient_id
+  left join provider_personal_identifiers pi on pi.Id = tpd.reviewer_id 
+
+  where tpd.phr = '1' and  tpd.patient_id = '50272f94-2e1f-4a71-8eff-2cb6517fc513' and lockunlock="0";
+Error: connect ECONNREFUSED 127.0.0.1:3306
+----------------------------------------------------------------------
+Time: 2024-6-23  21:56:33
+Query: SELECT * from provider_personal_identifiers where branchId='d09e4ab2-89a9-460e-9b6d-31140d7363ef'
+Error: connect ECONNREFUSED 127.0.0.1:3306
+----------------------------------------------------------------------
+Time: 2024-6-23  21:56:33
+Query: 
+    SELECT hr.guid as hospitalid,tro.organization_name,hr.*, CONCAT(hr.addressLine1, ' ', hr.district_name, ' ', hr.states_name, ' ',hr.Country) AS address
+    FROM hosptal_registration hr
+    INNER JOIN transaction_organization tro ON hr.organzation_id = tro.guid
+    WHERE hr.organzation_id ='26527209-9a3b-4a76-8138-920797b68258'
+Error: connect ECONNREFUSED 127.0.0.1:3306
+----------------------------------------------------------------------
+Time: 2024-6-23  21:56:33
+Query: select * from transaction_phrsharedata where patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513'
+Error: connect ECONNREFUSED 127.0.0.1:3306
+----------------------------------------------------------------------
+Time: 2024-6-23  21:56:33
+Query: select * from master_my_document_folder where  upload_by='PHR' and patient_id='50272f94-2e1f-4a71-8eff-2cb6517fc513'
+Error: connect ECONNREFUSED 127.0.0.1:3306
+----------------------------------------------------------------------
